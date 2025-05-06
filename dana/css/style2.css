@@ -1,0 +1,48 @@
+/* Background Form */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Form */
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Judul Form */
+h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Input Fields */
+.form-control {
+    border-radius: 8px;
+}
+
+/* Tombol */
+.btn-primary {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+/* Tombol Kembali */
+.btn-secondary {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+}

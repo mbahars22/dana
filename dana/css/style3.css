@@ -1,0 +1,204 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.main-container {
+    display: flex;
+}
+
+
+/* Atur ukuran sidebar */
+.admin-sidebar {
+    width: 250px; /* Lebar sidebar */
+    min-height: 100vh;
+    background: #343a40; /* Warna sidebar */
+    color: white;
+    padding: 20px;
+    position: fixed; /* Sidebar tetap */
+    top: 0;
+    left: 0;
+}
+
+/* Konten utama */
+.main-content {
+    margin-left: 250px; /* Beri jarak sesuai lebar sidebar */
+    width: calc(100% - 250px);
+    padding: 20px;
+}
+
+/* Responsive: Jika layar kecil, sidebar di-hide */
+@media (max-width: 768px) {
+    .admin-sidebar {
+        width: 100px; /* Sidebar diperkecil */
+    }
+
+    .main-content {
+        margin-left: 100px; /* Sesuaikan konten */
+        width: calc(100% - 100px);
+    }
+}
+
+
+.sidebar {
+    width: 250px;
+    background: #007bff;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    transition: all 0.3s;
+    height: 100vh;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    overflow-y: auto;
+}
+
+
+.content {
+    margin-left: 260px;
+}
+
+
+.sidebar h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 0 !important;;
+}
+
+.sidebar ul li a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+
+.content {
+    flex-grow: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+
+.info-card h5 {
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Toggle Sidebar */
+#sidebar.active {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.info-card {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+}
+
+/* Gradasi warna untuk setiap card */
+.card-blue {
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+}
+
+.card-green {
+    background: linear-gradient(45deg, #28a745, #a8e063);
+}
+
+.card-purple {
+    background: linear-gradient(45deg, #6f42c1, #b23ec9);
+}
+
+/* Tambahan hover effect */
+.info-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+body {
+    padding-top: 56px; /* Sesuaikan dengan tinggi navbar */
+}
+
+
+
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-container {
+        max-width: 100%;
+    }
+}
+
+
+#search_results {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    display: none;
+    z-index: 1000;
+}
+
+.dropdown-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: #f0f0f0;
+}
+
+  
+

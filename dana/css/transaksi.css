@@ -1,0 +1,22 @@
+.btn-modal i,
+.remove i {
+    font-size: 1rem; /* Ukuran ikon lebih besar */
+}
+
+.btn-modal,
+.remove {
+    padding: 8px 10px; /* Tambahkan padding */
+    font-size: 1rem; /* Perbesar teks */
+}
+.tombol-aksi {
+    display: flex;
+    justify-content: flex-end; /* Biar tetap kanan */
+    align-items: center; /* Biar vertikal sejajar */
+    gap: 5px; /* Jarak antar tombol */
+}
+.card-body p {
+    margin: 3px 0; /* Atur jarak antar elemen */
+    padding: 2px 0;
+}
+
+
